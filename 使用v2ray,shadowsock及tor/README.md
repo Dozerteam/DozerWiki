@@ -63,15 +63,24 @@ xshell是一个终端模拟软件，可用于连接和管理服务器。[Xshell�
 ### 安装
 
 ```
-bash <(curl -L -s https://install.direct/go.sh)
+bash <(curl -s -L https://git.io/v2ray.sh)
 ```
 
+之后如果服务器不支持中文会出现乱码，选择1是安装，2是卸载
 
-出现端口和用户id
+一路默认回车
+
+最后出现端口和用户id
 
 ```
 PORT:31040
 UUID:c2ffda3e-09be-4a32-b2de-508dca39d42e
+```
+
+开启对应端口
+
+```
+ufw allow 你的端口
 ```
 
 启动
